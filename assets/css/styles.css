@@ -357,6 +357,8 @@ img {
                     hsl(var(--hue), 70%, 85%) 0%,
                     hsl(var(var(--hue), 75%, 60%), 100%);
 }
+
+
 /* Circular text animation */
 
 
