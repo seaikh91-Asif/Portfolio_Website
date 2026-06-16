@@ -299,63 +299,84 @@ img {
 
 
 /*=============== HOME SECTION ===============*/
-.home{
+.home { 
   position: relative; 
 }
 
-.home .blob-small:nth-child(1){
+.home .blob-small {
+  position: absolute;
+}
+
+.home .blob-small:nth-child(1) {
    top: -2rem;
    left: -2rem;
 }
-.home .blob-small:nth-child(2){
+
+.home .blob-small:nth-child(2) {
   top: 11rem;
   right: -4rem;
 }
 
-.home__container{
+.home__container {
   padding-block: 2.5rem 3rem;
   row-gap: 7rem;
 }
 
-.home__data{
+.home__data {
   text-align: center;
   color: var(--white-color);
 }
 
-.home__subtitle{
+.home__subtitle {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
 }
 
-.home__title{
+.home__title {
   font-size: var(--biggest-font-size);
   margin-bottom: 0.5rem;
 }
 
-.home__title span{
+.home__title span {
   color: var(--first-color);
 }
 
-.home__box1, 
-.home__box2, 
-.home__box3{
+/* ফিক্সড কন্টেইনার কোড */
+.home__image {
+  position: relative;
+  display: flex; 
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+/* ফিক্সড কমন কোড */
+.home__box-1, 
+.home__box-2, 
+.home__box-3 {
   width: 210px;
   height: 250px;
   border-radius: 1.5rem;
+  position: absolute; 
 }
 
-.home__box-1{
+.home__box-1 {
   background-color: hsl(var(--hue), 25%, 32%);
 }
 
-.home__box-2{
+.home__box-2 {
   background-color: var(--white-color);
+  left: 0.75rem;
+  bottom: 0.75rem;
+  rotate: 5deg; 
 }
 
-.home__box-3{
-  background-color: linear-gradient(180deg), 
-                    hsl(var(--hue), 70%, 85%) 0%,
-                    hsl(var(var(--hue), 75%, 60%), 100%);
+.home__box-3 {
+  background: linear-gradient(180deg, 
+                hsl(var(--hue), 70%, 85%) 0%,
+                hsl(var(--hue), 75%, 60%) 100%);
+  left: 1.5rem;
+  bottom: 1.5rem;
+  rotate: 10deg; /* কমেন্ট ও ব্র্যাকেট এখানে ফিক্স করা হয়েছে */
 }
 
 
