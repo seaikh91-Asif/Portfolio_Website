@@ -28,10 +28,28 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== HOME TEXT CIRCULAR ===============*/
+const homeText = document.getElementById('home-text'), 
+      letters = homeText.textContent.trim().split(''), // converts text into an arry of character 
+      angleStep = 360 / letters.length // Angle for each; length counts the number
 
+homeText.textContent = '' // Clears the original content
+letters.forEach((char, i) => {
+   const span = document.createElement('span') // Create a <span> for each letter 
+   span.textContent = char // Inserts each eharacter into the span 
+   span.style.transform = `rotate(${i * angleStep}deg)` // Rotate each letters based on its index to form the circle
+   homeText.appendChild(span) // Append the span to the main container
+
+
+})
 
 /*=============== HOME TYPED JS ===============*/
-
+const typedHome = new Typed('#home-typed', {
+  strings: ['Engineering Student', 'Web Developer', 'Tech Enthusiast'],
+  typeSpeed: 60,
+  backSpeed: 30, 
+  backDelay: 2000, 
+  loop:true,
+});
 
 /*=============== CHANGE HEADER STYLES ===============*/
 
