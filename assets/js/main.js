@@ -52,8 +52,13 @@ const typedHome = new Typed('#home-typed', {
 });
 
 /*=============== CHANGE HEADER STYLES ===============*/
-
-
+const scrollHeader = () => {
+   const header = document.getElementById('header')
+   // Add teh .scroll-header classs if bottom scroll of the viewport is greater than 50 
+   this.scrollY >= 50 ? header.classList.add('scroll-header')
+                     : header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER WORK ===============*/ 
 
 
