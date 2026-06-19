@@ -564,8 +564,10 @@ img {
     width: 50%;
   }
 
+  .home__container,
   .home__container{
     grid-template-columns: 400px;
+
     justify-content: center;
   }
 }
@@ -644,6 +646,22 @@ img {
   }
   .home .blob-small:nth-child(2){
     top: 21rem;
+  }
+
+  .about__container{
+    grid-template-columns: 580px 380px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+  }
+
+  .about__description{
+    font-size: var(--h3-font-size);
+    margin-bottom: 2rem;
+  }
+
+  .about__button{
+    width: initial;
   }
 }
 
