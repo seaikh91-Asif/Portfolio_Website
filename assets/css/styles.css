@@ -519,7 +519,49 @@ img {
   width: 100%;
 }
 /*=============== WORK SECTION ===============*/
+.work__card{
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1rem 1rem 3rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
 
+.work__link{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem ;
+}
+
+.work__img{
+  border-radius: 1rem;
+  transition: transform 0.4s;
+}
+
+.work__arrow{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: var(--black-color);
+  /* opacity: 0;
+  transition: opacity 0.4s; */
+}
+
+.work__number{
+  display: block;
+  font: var(--font-semi-bold) var(--biggest-font-size) var(--second-font);
+  color:var(--first-color);
+  margin-bottom: 1rem;
+}
 
 /* Swiper class */
 
