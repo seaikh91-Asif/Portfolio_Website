@@ -533,6 +533,11 @@ img {
   overflow: hidden;
   border-radius: 1rem;
   margin-bottom: 1.5rem ;
+  z-index: 5;
+}
+
+.work__data{
+  z-index: 5;
 }
 
 .work__img{
@@ -561,6 +566,32 @@ img {
   font: var(--font-semi-bold) var(--biggest-font-size) var(--second-font);
   color:var(--first-color);
   margin-bottom: 1rem;
+}
+
+.work__name{
+  font-size: var(--h2-font-size);
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+}
+
+.work__card:hover .work__img{ 
+  transform: scale(1.1);
+}
+
+.work__card:hover .work__arrow{
+  opacity: 1;
+}
+
+.work__card .blob__big {
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  width: 180px;        
+  height: 180px;      
+  background: var(--gradient-color); 
+  border-radius: 50%;  
+  filter: blur(100px);  
+  z-index: 1;          
 }
 
 /* Swiper class */
