@@ -60,7 +60,23 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollHeader)
 /*=============== SWIPER WORK ===============*/ 
+const swiperWork = new Swiper('.work__swiper', {
+ 
+  loop: true,
+  spaceBetween: 24,
+  slidePreView:'auto',
+   grabCursor: true, 
+   speed: 600,
 
+  pagination: {
+    el: '.swiper-pagination',
+    clickble:true,
+  },
+//   autoplay: {
+//    deley: 2000, 
+//    disableOnInterection: false,
+//   }
+})
 
 /*=============== SERVICES ACCORDION ===============*/ 
 
